@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif; /* Consistent font throughout the page */
+    background-color: #f4f4f4; /* Light grey background for some contrast */
+    color: #333; /* Dark grey text for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Centering the main content div */
+div {
+    width: 60%; /* Adjusted width for better focus */
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* White background for the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for modern look */
+}
+
+/* Header styles */
+h1 {
+    color: #5A5A5A; /* Slightly lighter grey than the text */
+    text-align: center;
+    font-size: 24px; /* Larger font size for emphasis */
+}
+
+/* Styling for each assessment result */
+.assessment-result {
+    border: 1px solid #ddd; /* Softened the border color */
+    padding: 20px;
+    margin-bottom: 20px; /* Increased space between entries */
+    border-radius: 8px; /* Rounded corners for the blocks */
+}
+
+.assessment-result p {
+    font-size: 16px; /* Readable font size */
+    line-height: 1.5; /* Spacing for readability */
+    margin: 5px 0; /* Spacing between paragraphs */
+}
+
+.score-highlight {
+    font-size: 18px; /* Larger font size for score */
+    font-weight: bold; /* Bold for emphasis */
+    color: #007BFF; /* Blue color for scores to stand out */
+}
+
+/* Style for the 'Back to Dashboard' link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Bright blue for visibility */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

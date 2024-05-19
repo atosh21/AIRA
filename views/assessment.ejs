@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assessment.css">
+    <title>Assessment Results</title>
+</head>
+<body>
+    <div>
+        <h1>Assessment Results</h1>
+    <% if (assessments.length > 0) { %>
+        <% assessments.forEach(function(assessment) { %>
+            <div>
+                <p>Topic Name: <%= assessment.TopicName %></p>
+                <p>Question Type: <%= assessment.QuestionType %></p>
+                <p>Score: <%= assessment.Score %> out of <%= assessment.TotalQuestions %></p>
+                <p>Date Taken: <%= new Date(assessment.CreatedAt).toLocaleString() %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No assessments found.</p>
+    <% } %>
+        <a href="/homepage">Back to Dashboard</a>
+    </div>
+</body>
+</html>
